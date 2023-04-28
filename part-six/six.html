@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="
+        const randomNumber = Math.random();
+        let result='';
+        
+        if (randomNumber >= 0 && randomNumber <= 0.5) {
+            result='head'
+        }
+        else if(randomNumber >=0.5 && randomNumber<1){
+           result='tail'
+        }
+        console.log(result)
+        let guess='tail';
+        if(result===guess){
+console.log('you win')
+        }
+        else{console.log('you lose')}
+        ">Coin</button>
+    <script>
+        const hour = 17.1;
+        let message = '';
+        if (hour >= 6 && hour <= 12) {
+            message = 'good morning'
+        }
+        else if (hour >= 12 && hour <= 17) {
+            message = 'good afternoon'
+        }
+        else {
+            message = 'good night'
+        }
+
+
+
+        const name = ' sayful';
+        const greeting = `${message}${name}`
+        // console.log(greeting)
+        const age = 65;
+        const holiday = true;
+        if ((age <= 6 || age >= 65) && !holiday) {
+            console.log('Discount')
+        }
+        else { console.log('No discount') }
+
+
+
+
+    </script>
+</body>
+
+</html>

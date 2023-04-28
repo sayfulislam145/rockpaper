@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="button-1" onclick="console.log(`Normal Quantity: ${NormalQuantity}`)">Show Quantity</button>
+
+    <button class="button-2" onclick="NormalQuantity++;
+    console.log(`Normal Quantity: ${NormalQuantity}`)">Add to Cart</button>
+
+    <button class="button-3" onclick="NormalQuantity+=2;console.log(`Normal Quantity: ${NormalQuantity}`)">+2</button>
+
+    <button class="button-4" onclick="NormalQuantity+=3;console.log(`Normal Quantity: ${NormalQuantity}`)">+3</button>
+    <button class="button-5" onclick="NormalQuantity=0;console.log(`Normal Quantity: ${NormalQuantity}`)">Reset
+        Cart
+
+    </button>
+    <button onclick="NormalQuantity+=4;console.log(`Normal Quantity:${NormalQuantity}`)">+4</button>
+    <button onclick="NormalQuantity+=5;console.log(`Normal Quantity:${NormalQuantity}`)">+5</button>
+    <button onclick="NormalQuantity--;console.log(`Normal Quantity:${NormalQuantity}`)">-1</button>
+
+
+
+
+
+
+
+
+    <script>
+        let NormalQuantity = 0;
+        const name = 'sayful';
+        console.log(`My name is:${name}`)
+        const cost = 5 + (2 * 3) + 9
+        console.log(`C.${cost} `)
+        const tex = cost * .1;
+        console.log(`Tax(10%):${tex}`)
+        const totalCost = cost + tex;
+        console.log(`Total cost:$${totalCost}`)
+    </script>
+</body>
+
+</html>

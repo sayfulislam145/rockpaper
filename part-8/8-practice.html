@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const product = {
+            name: 'cloth',
+            color: 'red',
+            'page': 150,
+            ['price']: 1000,
+            another: function () {
+                console.log('Good Try')
+            }
+        }
+
+        console.log(product['name'] = 'books')
+        console.log(product)
+        product.another()
+        console.log(typeof product.another)
+    </script>
+</body>
+
+</html>
